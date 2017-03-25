@@ -191,7 +191,7 @@ resource "datadog_monitor" "NTP_OFFSET" {
 
 
 resource "datadog_monitor" "SWAP_MEMORY" {
-  name               = "${var.enviroment_tag} NTP OFFSET"
+  name               = "${var.enviroment_tag} SWAP MEMORY"
   type               = "metric alert"
   message            = "Monitor triggered. Notify: ${var.users}"
 
@@ -220,7 +220,7 @@ resource "datadog_monitor" "SWAP_MEMORY" {
 
 
 resource "datadog_monitor" "LOAD_AVERAGE_5MINUTES" {
-  name               = "${var.enviroment_tag} NTP OFFSET"
+  name               = "${var.enviroment_tag} LOAD_AVERAGE_5MINUTES"
   type               = "metric alert"
   message            = "Monitor triggered. Notify: ${var.users}"
 
@@ -247,7 +247,7 @@ resource "datadog_monitor" "LOAD_AVERAGE_5MINUTES" {
 }
 
 resource "datadog_monitor" "LOAD_AVERAGE_15MINUTES" {
-  name               = "${var.enviroment_tag} NTP OFFSET"
+  name               = "${var.enviroment_tag} LOAD_AVERAGE_15MINUTES"
   type               = "metric alert"
   message            = "Monitor triggered. Notify: ${var.users}"
 
@@ -274,7 +274,7 @@ resource "datadog_monitor" "LOAD_AVERAGE_15MINUTES" {
 }
 
 resource "datadog_monitor" "LOAD_AVERAGE_1MINUTES" {
-  name               = "${var.enviroment_tag} NTP OFFSET"
+  name               = "${var.enviroment_tag} LOAD_AVERAGE_1MINUTES"
   type               = "metric alert"
   message            = "Monitor triggered. Notify: ${var.users}"
 
